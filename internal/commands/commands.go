@@ -14,7 +14,7 @@ type Cmd struct {
 	app *mcli.App
 }
 
-// New takes an *lsc.App instance as parameter and returns an instance of Cmd.
+// New takes an *mcli.App instance as parameter and returns an instance of Cmd.
 func New(app *mcli.App) *Cmd {
 	cliApp := &cli.App{
 		Name:                 "mcli",

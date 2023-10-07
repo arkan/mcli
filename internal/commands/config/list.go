@@ -14,7 +14,7 @@ func newListCommand(app *mcli.App) *cli.Command {
 		Usage: "Print the list of configuration keys and values",
 		Action: func(c *cli.Context) error {
 			if c.NArg() != 0 {
-				return fmt.Errorf("usage: lsc config list")
+				return fmt.Errorf("usage: mcli config list")
 			}
 
 			e := reflect.ValueOf(app.Config)
